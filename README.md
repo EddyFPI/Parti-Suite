@@ -29,6 +29,24 @@ It provides forward and inverse modeling, force simulations, and multiscale upsc
 
 ---
 
+## Dependencies
+
+Parti Suite requires common scientific Python libraries:
+
+- Python ≥ 3.9 (recommended: 3.10–3.12)  
+- `numpy`  
+- `scipy`  
+- `matplotlib`  
+- `customtkinter` (for the GUIs)  
+- *(Optional)* `pandas` for data export  
+- *(Optional)* `numba` or `multiprocessing` for heavy simulations
+
+Install with:
+
+    pip install numpy scipy matplotlib customtkinter pandas
+
+
+
 ## Usage
 
 Parti Suite modules are provided as independent Python scripts, each with its own **Graphical User Interface (GUI)**.  
@@ -41,3 +59,42 @@ python xDLVO.py
 python TrajHap.py
 python AFM_ForceVolume.py
 python UpscaleContinuum.py
+```
+
+## Documentation
+
+- **Wiki:** https://github.com/EddyFPI/Parti-Suite/wiki  
+- **Issues:** https://github.com/EddyFPI/Parti-Suite/issues
+
+---
+
+## Authors
+
+- **William P. Johnson** – *Department of Geology & Geophysics, University of Utah, USA*  
+  *(Main author; theoretical framework and models)*
+
+- **Eddy Pazmiño** – *Department of Extractive Metallurgy, Escuela Politécnica Nacional (EPN), Quito, Ecuador*  
+  *(Lead developer and maintainer)*
+
+With contributions from students and collaborators across **colloid science, hydrogeology, environmental engineering, geoscience, and computational transport modeling** (e.g., **Meiping Tong**, **Xiqing Li**, **Timothy D. Scheibe**, **I. L. Molnar**, **J. I. Gerhard**, and others).
+
+---
+
+## License
+
+Parti Suite is distributed under the terms of the **GNU General Public License v3.0**.  
+See [LICENSE](LICENSE) for full text.
+
+---
+
+## Citation
+
+If you use Parti Suite in your research or teaching, please cite:
+
+```bibtex
+@software{parti_suite,
+  title   = {Parti Suite: Colloid Filtration Theory Toolkit},
+  author  = {Johnson, William P. and Pazmiño, Eddy and contributors},
+  year    = {2025},
+  url     = {https://github.com/EddyFPI/Parti-Suite}
+}
