@@ -30,24 +30,25 @@ It provides forward and inverse modeling, force simulations, and multiscale upsc
 ---
 
 ## Documentation
-- [Wiki](https://github.com/<your-org>/parti-suite/wiki) — tutorials, usage, and examples  
-- [Issues](https://github.com/<your-org>/parti-suite/issues) — bug reports and feature requests  
+- **Wiki:** https://github.com/EddyFPI/Parti-Suite/wiki  
+- **Issues:** https://github.com/EddyFPI/Parti-Suite/issues  
 
 ---
 
 ## Authors
 - **William P. Johnson** – *Department of Geology & Geophysics, University of Utah, USA*  
-  *(main author, theoretical framework and models)*  
+  *(main author, theoretical framework and models)*
 
 - **Eddy Pazmiño** – *Department of Extractive Metallurgy, Escuela Politécnica Nacional, Quito, Ecuador*  
-  *(lead developer and maintainer)*  
+  *(lead developer and maintainer)*
 
-- With contributions from students and collaborators across colloid science, hydrogeology, environmental engineering, geoscience, and computational modeling
+With contributions from students and collaborators across **colloid science, hydrogeology, environmental engineering, geoscience, and computational transport modeling.
 
 ---
 
 ## License
-Parti Suite is distributed under the terms of the [GNU General Public License v3.0](LICENSE).
+Parti Suite is distributed under the terms of the **GNU General Public License v3.0**.  
+See [LICENSE](LICENSE).
 
 ---
 
@@ -59,5 +60,5 @@ If you use Parti Suite in your research or teaching, please cite:
   title   = {Parti Suite: Colloid Filtration Theory Toolkit},
   author  = {Johnson, William P. and Pazmiño, Eddy and contributors},
   year    = {2025},
-  url     = {https://github.com/<your-org>/parti-suite}
+  url     = {https://github.com/EddyFPI/Parti-Suite}
 }
