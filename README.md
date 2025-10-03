@@ -34,6 +34,10 @@ It provides forward and inverse modeling, force simulations, and multiscale upsc
 Parti Suite modules are provided as independent Python scripts, each with its own **Graphical User Interface (GUI)**.  
 There is no installation package — simply clone or download the repository and run the module you need in your preferred Python IDE (Spyder, VS Code, PyCharm) or directly from the command line.
 
-Example:  
 ```bash
 python CorrelationEquations.py
+# or
+python xDLVO.py
+python TrajHap.py
+python AFM_ForceVolume.py
+python UpscaleContinuum.py
