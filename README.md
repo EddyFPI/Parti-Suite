@@ -28,6 +28,24 @@ It provides forward and inverse modeling, force simulations, and multiscale upsc
   and fits experimental column data to obtain best-fit parameters.
 
 ---
+## Dependencies
+
+Parti Suite requires common scientific Python libraries:
+
+- Python ≥ 3.9 (recommended: 3.10–3.12)  
+- `numpy`  
+- `scipy`  
+- `matplotlib`  
+- `customtkinter` (for the GUIs)  
+- *(Optional)* `pandas` for data export  
+- *(Optional)* `numba` or `multiprocessing` for heavy simulations
+
+Install with your preferred environment manager, e.g.:
+
+```bash
+pip install numpy scipy matplotlib customtkinter pandas
+
+
 
 ## Usage
 
