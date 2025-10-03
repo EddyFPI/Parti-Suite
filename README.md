@@ -42,7 +42,7 @@ It provides forward and inverse modeling, force simulations, and multiscale upsc
 - **Eddy Pazmiño** – *Department of Extractive Metallurgy, Escuela Politécnica Nacional, Quito, Ecuador*  
   *(lead developer and maintainer)*  
 
-- With contributions from graduate students and collaborators in extractive metallurgy, environmental engineering, and groundwater transport.  
+- With contributions from students and collaborators across colloid science, hydrogeology, environmental engineering, geoscience, and computational modeling
 
 ---
 
