@@ -29,36 +29,11 @@ It provides forward and inverse modeling, force simulations, and multiscale upsc
 
 ---
 
-## Documentation
-- **Wiki:** https://github.com/EddyFPI/Parti-Suite/wiki  
-- **Issues:** https://github.com/EddyFPI/Parti-Suite/issues  
+## Usage
+Parti Suite modules are provided as independent Python scripts, each with its own **Graphical User Interface (GUI)**.  
+No installation is required — simply clone/download the repository and run the module of interest in a Python IDE (Spyder, VS Code, PyCharm) or from the command line.
 
----
-
-## Authors
-- **William P. Johnson** – *Department of Geology & Geophysics, University of Utah, USA*  
-  *(main author, theoretical framework and models)*
-
-- **Eddy Pazmiño** – *Department of Extractive Metallurgy, Escuela Politécnica Nacional, Quito, Ecuador*  
-  *(lead developer and maintainer)*
-
-With contributions from students and collaborators across **colloid science, hydrogeology, environmental engineering, geoscience, and computational transport modeling.
-
----
-
-## License
-Parti Suite is distributed under the terms of the **GNU General Public License v3.0**.  
-See [LICENSE](LICENSE).
-
----
-
-## Citation
-If you use Parti Suite in your research or teaching, please cite:
-
-```bibtex
-@software{parti_suite,
-  title   = {Parti Suite: Colloid Filtration Theory Toolkit},
-  author  = {Johnson, William P. and Pazmiño, Eddy and contributors},
-  year    = {2025},
-  url     = {https://github.com/EddyFPI/Parti-Suite}
-}
+### Running a Module
+For example, to launch the Correlation Equations GUI:
+```bash
+python CorrelationEquations.py
