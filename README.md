@@ -68,6 +68,19 @@ python UpscaleContinuum.py
 
 ---
 
+## Related Reading
+
+A key open-access reference that complements Parti Suite is available through the [Groundwater Project](https://gw-project.org/):
+
+- **[Colloid, Nano, and Micro-Particle Transport and Surface Interaction in Groundwater](https://gw-project.org/books/colloid-nano-and-micro-particle-transport-and-surface-interaction-in-groundwater/)**  
+  This book provides a comprehensive overview of colloid and nanoparticle transport in groundwater systems.  
+  It covers fundamental concepts of colloid filtration theory (CFT), surface interactions (DLVO and extended DLVO),  
+  the role of nanoscale heterogeneity, and upscaling approaches for predicting breakthrough and retention in porous media.  
+  The text bridges theoretical foundations with experimental findings, making it a valuable resource for both  
+  researchers and students in hydrogeology, environmental engineering, and contaminant transport modeling.
+
+
+
 ## Tutorials
 
 📺 We have a YouTube playlist with step-by-step tutorials:  
