@@ -68,6 +68,13 @@ python UpscaleContinuum.py
 
 ---
 
+## Tutorials
+
+📺 We have a YouTube playlist with step-by-step tutorials:  
+[Parti Suite Tutorials on YouTube](https://www.youtube.com/playlist?list=XXXXXXXX)
+
+---
+
 ## Authors
 
 - **William P. Johnson** – *Department of Geology & Geophysics, University of Utah, USA*  
