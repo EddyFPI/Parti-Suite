@@ -36,8 +36,12 @@ It provides forward and inverse modeling, force simulations, and multiscale upsc
 ---
 
 ## Authors
-- **William P. Johnson** – University of Utah *(main author, theoretical framework and models)*  
-- **Eddy Pazmiño** – Escuela Politécnica Nacional, Quito *(lead developer and maintainer)*  
+- **William P. Johnson** – *Department of Geology & Geophysics, University of Utah, USA*  
+  *(main author, theoretical framework and models)*  
+
+- **Eddy Pazmiño** – *Department of Extractive Metallurgy, Escuela Politécnica Nacional, Quito, Ecuador*  
+  *(lead developer and maintainer)*  
+
 - With contributions from graduate students and collaborators in extractive metallurgy, environmental engineering, and groundwater transport.  
 
 ---
