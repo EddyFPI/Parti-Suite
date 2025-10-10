@@ -114,7 +114,7 @@ If you use Parti Suite in your research or teaching, please cite:
 ```bibtex
 @software{parti_suite,
   title   = {Parti Suite: Colloid Filtration Theory Toolkit},
-  author  = {Johnson, William P. and Pazmiño, Eddy and contributors},
+  author  = {Pazmiño, Eddy and Johnson, William P. et al.},
   year    = {2025},
   url     = {https://github.com/EddyFPI/Parti-Suite}
 }
