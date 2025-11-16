@@ -469,3 +469,170 @@ Time (in seconds) at each step of the simulation.
 Fraction of colloid–surface ZOI occupied by heterodomain  
 (time-resolved per trajectory).
 
+## Run-Time and Output Parameters in TRAJ-HAP, TRAJ-JET, and TRAJ-PAR
+
+Guidance regarding DRNH (RHET and SCOV) is provided immediately below. Further below we provide information regarding run time parameters (RLIM, DFACT, MULT) that is not provided in Supporting Information in our publications.
+
+## RHET and SCOV
+
+### Rationale
+Discrete representative nanoscale heterogeneity (DRNH) is assumed by our code to follow a Pareto-type distribution wherein the number-based frequency of heterodomains (nanoscale attractive zones) increases geometrically with decreased heterodomain size, reflective of a clustering phenomenon.
+
+### Method
+The spreadsheet **“SCOV calculator”** is provided on the distribution site.
+
+On the worksheet, the user specifies:
+
+- the grain radius  
+- the colloid diameters  
+
+From this information, the spreadsheet determines the appropriate heterodomain sizes capable of arresting and releasing each colloid size based on carboxylate-modified polystyrene latex microspheres on silica (Ron et al., 2019; VanNess et al., 2019; Rasmuson et al., 2019).
+
+The spreadsheet calculates:
+
+- surface density  
+- number of heterodomains  
+- surface coverage (SCOV)  
+
+SCOV is used directly by the trajectory code.
+
+Although the code can use **multiple** heterodomain sizes, we strongly recommend **using a single size** per simulation:
+
+- `HETMODE = 1`  
+- only `RHET0` defined
+
+## RLIM (Injection Radius)
+
+### Rationale
+Beyond a certain radius, particle trajectories have **zero** chance of intercepting the collector surface. To save computation time, particles can be injected only within a specified radius (RLIM).
+
+RLIM must be **slightly larger** than the true limiting radius.
+
+### Sensitivity
+RLIM depends on:
+- particle size  
+- collector size  
+- fluid velocity  
+
+Small particles experience greater diffusion and can cross streamlines, increasing intercept probability.
+
+### How to Test
+Always test RLIM under **favorable conditions**, i.e.:
+
+- opposite zeta potentials (collector vs particle)  
+- `SCOV = 0` (no heterogeneity)  
+- **SEP mode** (`ATTMODE = 0`)  
+
+Recommended tests:
+
+#### **1. Plot XINIT and YINIT of attached vs exited particles**
+
+This visualizes the true limiting radius.  
+(Refer to *Figure 3* from the Word document.)
+
+#### **2. Plot collector efficiency (η) vs RLIM**
+
+η should:
+
+- plateau at sufficient RLIM  
+- drop sharply when RLIM is too small  
+
+Choose RLIM from the plateau region.  
+(Refer to *Figure 4* from the Word document.)
+
+## DFACTC and DFACTNS  
+(Contact displacement factor & Near-surface displacement factor)
+
+### Rationale
+DFACT parameters allow slow-moving particles in the near-surface or contact domains to be flagged and terminated early, preventing excessive computation times.
+
+### Important Notes
+- **Only ATTACHK = 2** is true attachment.  
+- **ATTACHK = 3** → unresolved (simulation ended before resolution).  
+- **ATTACHK = 4** → slow-motion in contact (flagged via DFACTC).  
+- **ATTACHK = 5** → slow-motion in near-surface (flagged via DFACTNS).  
+- **ATTACHK = 6** → numerical crash (time-step too large).
+
+### Behavior
+If DFACT is too **large**:
+- particles are flagged prematurely  
+- they never reach equilibrium separation distance  
+- (Figure 1 in the Word document)
+
+If DFACT is too **small**:
+- no particles are flagged  
+- simulations may take excessively long  
+
+### Method
+DFACTNS and DFACTC compare:
+
+- actual particle displacement over a certain interval  
+**vs**  
+- expected Stokes–Einstein displacement in bulk  
+
+Applied when:
+- `H < 200 nm` → near-surface check (DFACTNS)  
+- `H < HFRIC` → contact check (DFACTC)
+
+### Why DFACT << 1 ?
+Because hydrodynamic retardation drastically reduces displacement near surfaces, so the expected displacement in bulk is much larger.
+
+### Typical Calibrated Values
+For 2.0 μm colloids under unfavorable conditions:
+
+- `DFACTNS = 0.001`  
+- `DFACTC = 0.1`  
+
+Values higher than this will falsely flag many particles (Figure 2 in the Word document).  
+Values lower produce no flagged particles.
+
+## MULT (Time-Step Parameters)
+
+### Rationale
+Diffusion becomes uncorrelated only above a certain time scale.  
+If a timestep smaller than the momentum relaxation time is used, diffusion randomness is applied incorrectly.
+
+### Definition
+The time-step is:
+dt = MULT × dt_MRT
+
+
+where:
+- `dt_MRT` = particle momentum relaxation time
+
+### Domains and MULT Usage
+Three different multipliers are used:
+
+- **MULT** — bulk fluid (`H > 2.0e-7 m`)
+- **MULT2** — near surface (`HFRIC > H > 2.0e-7 m`)
+- **MULT3** — contact (`H < HFRIC`)
+
+**Note:** Diffusion is disabled in contact mode, so MULT3 may be < 1.
+
+### Sensitivity
+If MULT or MULT2 are too **large**:
+
+- displacement per timestep can exceed contact threshold  
+- particle may “crash” into surface (`H < 0`)  
+- flagged as **ATTACHK = 6**
+
+If this occurs:
+- reduce MULT and MULT2
+
+## NOUT
+
+Controls frequency of writing trajectory data.
+
+- If **NOUT too large** → trajectory resolution is coarse.  
+- If **NOUT too small** → very large output files; risk of exceeding PRINTMAX.
+
+## PRINTMAX (Maximum Output Array Length)
+
+PRINTMAX limits the number of saved rows in trajectory files.
+
+If the limit is exceeded:
+
+- the array begins overwriting from line 2  
+- only the **end** of the trajectory is preserved  
+
+This is normal behavior to protect memory usage.
