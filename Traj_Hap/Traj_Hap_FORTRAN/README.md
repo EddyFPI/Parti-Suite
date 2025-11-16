@@ -29,7 +29,7 @@ The pore-scale Lagrangian trajectory simulations were originally written in Fort
 
 The software is herein provided as ported MatLab executables for clear visualization of trajectory simulations of colloid populations numbering in the tens to hundreds depending on simulation parameters (which define computational intensity). At a minimum the Matlab codes provide visualization and teaching opportunities. Once the user has understood the Matlab executables, we encourage use of the Fortran executables, which allow simulation of populations of hundreds to thousands (depending on simulation conditions).
 
-To facilitate parallelized simulation of larger particle populations (thousands to tens of thousands) we intend to provide Python-based easily parallelized software in the near future (hopefully early 2020), but we are also willing to collaborate on Fortran-based parallel simulations on our platform for interested users. For simulations not reasonably attainable via the Matlab or Fortran executables, please feel free to contact us with requests for parallelized simulations.
+To facilitate parallelized simulation of larger particle populations (thousands to tens of thousands) we intend to provide Python-based easily parallelized software in the near future (hopefully early 2026), but we are also willing to collaborate on Fortran-based parallel simulations on our platform for interested users. For simulations not reasonably attainable via the Matlab or Fortran executables, please feel free to contact us with requests for parallelized simulations.
 
 <p align="center">
   <img src="figures/figure_1_1.png" width="600">
