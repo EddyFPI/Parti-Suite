@@ -324,3 +324,84 @@ Smaller → higher resolution but larger files.
 ### PRINTMAX  
 Maximum allowable size for trajectory output arrays.  
 If exceeded, older rows are overwritten.
+
+## Description of Summary Flux Files for the Population of Particle Trajectories  
+(from TRAJ-HAP, TRAJ-JET, or TRAJ-PAR)
+
+Flux files output from both Traj-Hap and Traj-Jet are titled as:
+
+- **HAPHETFLUXATT** — attached particles  
+- **HAPHETFLUXREM** — functionally attached or retained without attachment  
+- **HAPHETFLUXEX** — exited particles
+
+These flux files contain population-level results for each simulated particle.
+
+### The following parameters are provided for each particle:
+
+#### PARTICLE #
+Injection order.
+
+#### HINIT (m), XINIT (m), YINIT (m), ZINIT (m), RINJ (m)
+Initial separation distance from surface, and initial x, y, z and radial positions in the injection plane.
+
+#### HOUT (m), XOUT (m), YOUT (m), ZOUT (m)
+Final separation distance from surface, and final spatial coordinates.
+
+#### PTIMEIN (s), PTIMEOUT (s)
+Time of injection and time of exit / attachment / remaining classification.
+
+#### ETIME (s), TBULK (s), TNEAR (s), TFRIC (s)
+- **ETIME** — elapsed time in collector before exit/attachment/remaining  
+- **TBULK** — elapsed time in bulk fluid  
+- **TNEAR** — elapsed time in near-surface fluid  
+- **TFRIC** — elapsed time in contact (friction) domain  
+
+#### NSVISIT
+Number of visits to the near-surface domain.
+
+#### FRICVISIT
+Number of visits to the contact (friction) domain.
+
+---
+
+## ATTACHK (Retention Mode Classification)
+
+ATTACHK is a key indicator describing the outcome of each particle:
+
+| Code | Meaning |
+|------|---------|
+| **1** | EXIT — particle exited the system |
+| **2** | ATTACHED — by perfect sink or torque balance (true attachment) |
+| **3** | REMAINING IN BULK FLUID — unresolved when simulation ended |
+| **4** | TORQUE WITH SLOW MOTION — designated attached via DFACTC |
+| **5** | IN NEAR-SURFACE WITH SLOW MOTION — designated attached via DFACTNS |
+| **6** | CRASHED — negative separation distance occurred (numerical error) |
+
+### Notes:
+
+- Only **ATTACHK = 2** is considered *true attachment*.  
+- **ATTACHK 3, 4, 5** are non-terminal or slow-motion classifications.
+- **ATTACHK 6** indicates excessive time-step size (reduce MULT parameters).
+
+---
+
+## Heterogeneity Fields
+
+#### AFRACT
+Fraction of colloid–surface ZOI (Zone of Influence) occupied by a heterodomain.
+
+#### HETTYPE
+Identifier for heterodomain size.
+
+---
+
+## Near-Surface Metrics
+
+#### NSVEL (m/s)
+Near-surface colloid velocity (derived from <200 nm residence periods).
+
+#### HAVE (m)
+Average separation distance while in near-surface domain.
+
+---
+
