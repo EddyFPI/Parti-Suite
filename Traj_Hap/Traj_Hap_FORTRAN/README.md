@@ -35,7 +35,7 @@ To facilitate parallelized simulation of larger particle populations (thousands 
   <img src="figures/figure_1_1.png" width="600">
 </p>
 
-<p align="center"><b>Figure 1.</b> Particle trajectory showing a flagged near-surface particle.</p>
+<p align="center"><b>Figure 1.</b> Particle trajectory showing a color code dependening on separation distance particle trajectories.</p>
 
 
 The codes can be run in “contact” versus “perfect sink” modes:
