@@ -20,7 +20,7 @@ c) Time step and other transport parameters
 
 Mechanistic pore scale Lagrangian trajectory simulations using full force and torque balance on particles in the respective flow fields and collector geometries are provided in Traj-Hap (Happel sphere-in-cell), Traj-Jet (impinging jet) and Traj-Par (parallel plate).
 
-Detailed descriptions of the force and torque balance are provided in a free book at the Groundwater Project by Johnson & Pazmino 2023 [Colloid (Nano- and Micro-Particle) Transport and Surface Interaction in Groundwater](https://gw-project.org/books/colloid-nano-and-micro-particle-transport-and-surface-interaction-in-groundwater/)
+Detailed descriptions of the force and torque balance are provided in a free book at the Groundwater Project by Johnson & Pazmino (2023) [Colloid (Nano- and Micro-Particle) Transport and Surface Interaction in Groundwater](https://gw-project.org/books/colloid-nano-and-micro-particle-transport-and-surface-interaction-in-groundwater/)
 . This book provides a comprehensive overview of colloid and nanoparticle transport in groundwater systems. It covers fundamental concepts of colloid filtration theory (CFT), surface interactions (DLVO and extended DLVO), the role of nanoscale heterogeneity, and upscaling approaches for predicting breakthrough and retention in porous media.
 
 This work is also described in W.P. Johnson Research Group publications (http://www.wpjohnsongroup.utah.edu/; or https://scholar.google.com/citations?user=C9gB_GgAAAAJ&hl=en&authuser=1), see in particular Pazmino et al. (2014), Trauscht et al., (2014), Ron et al., (2019), Rasmuson et al., (2019), and VanNess et al. (2019), and references therein.
