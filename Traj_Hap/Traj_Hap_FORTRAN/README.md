@@ -405,3 +405,67 @@ Average separation distance while in near-surface domain.
 
 ---
 
+## Description of Output Trajectory Files for Individual Particle Trajectories  
+(from TRAJ-HAP, TRAJ-JET, or TRAJ-PAR)
+
+Trajectory files output from Traj-Hap and Traj-Jet are titled as:
+
+- **HAPHETTRAJATT** — trajectories of attached particles  
+- **HAPHETTRAJREM** — trajectories of particles retained without attachment  
+- **HAPHETTRAJEX** — trajectories of exited particles  
+
+These files provide **time-resolved data** for *individual* colloids.
+
+---
+
+## Each trajectory file contains the following parameters:
+
+### X, Y, Z
+Position of the particle center.
+
+### I
+Time-step index.
+
+### H
+Colloid–surface separation distance.
+
+---
+
+## Force Components
+
+### FCOLL
+Total colloid–surface interaction force.
+
+### FEDL
+Electric double layer force.
+
+### FVDW
+van der Waals force.
+
+### FDRGX, FDRGY, FDRGZ
+Fluid drag force components (x, y, z).
+
+### FDIFX, FDIFY, FDIFZ
+Diffusion force components (x, y, z).
+
+---
+
+## Velocity Components
+
+### UX, UY, UZ
+Colloid velocity components.
+
+### VX, VY, VZ
+Fluid velocity components.
+
+---
+
+## PTIMEF
+Time (in seconds) at each step of the simulation.
+
+---
+
+## AFRACT
+Fraction of colloid–surface ZOI occupied by heterodomain  
+(time-resolved per trajectory).
+
