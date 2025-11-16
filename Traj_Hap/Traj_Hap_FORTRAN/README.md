@@ -31,6 +31,8 @@ The software is herein provided as ported MatLab executables for clear visualiza
 
 To facilitate parallelized simulation of larger particle populations (thousands to tens of thousands) we intend to provide Python-based easily parallelized software in the near future (hopefully early 2020), but we are also willing to collaborate on Fortran-based parallel simulations on our platform for interested users. For simulations not reasonably attainable via the Matlab or Fortran executables, please feel free to contact us with requests for parallelized simulations.
 
+![Figure 1](Traj_Hap/Traj_Hap_FORTRAN/Figure1.png)
+
 The codes can be run in “contact” versus “perfect sink” modes:
 
 - **Perfect sink:** particle is arrested when separation distance < 1 nm
