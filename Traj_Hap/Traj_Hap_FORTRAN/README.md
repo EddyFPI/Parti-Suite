@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="figures/figure0.png" width="600">
+</p>
+
+<p align="center"><b>Figure 1.</b>
+
+
 # Parti-Suite Trajectory Codes Descriptions  
 ### TRAJ-HAP, TRAJ-JET, and TRAJ-PAR
 
