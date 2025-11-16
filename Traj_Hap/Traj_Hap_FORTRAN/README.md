@@ -32,7 +32,7 @@ The software is herein provided as ported MatLab executables for clear visualiza
 To facilitate parallelized simulation of larger particle populations (thousands to tens of thousands) we intend to provide Python-based easily parallelized software in the near future (hopefully early 2020), but we are also willing to collaborate on Fortran-based parallel simulations on our platform for interested users. For simulations not reasonably attainable via the Matlab or Fortran executables, please feel free to contact us with requests for parallelized simulations.
 
 <p align="center">
-  <img src="figures/figure1_1.png" width="600">
+  <img src="figures/figure1_1.tif" width="600">
 </p>
 
 <p align="center"><b>Figure 1.</b> Particle trajectory showing a flagged near-surface particle.</p>
