@@ -1,6 +1,6 @@
 # Parti Suite
 
-**Parti Suite** is an open-source toolkit for colloid transport and interaction simulations at nano-, pore-, and continuum scale, as described in detail in the free book by Johnson and Pazmiño (2023)  
+**Parti Suite** is an open-source toolkit for colloid transport and interaction simulations at nano-, pore-, and continuum scale, as described in detail in the free book:   
 (Johnson & Pazmiño, 2023; [*Colloid (Nano- and Micro-Particle) Transport and Surface Interaction in Groundwater*](https://gw-project.org/books/colloid-nano-and-micro-particle-transport-and-surface-interaction-in-groundwater/))
 
 
