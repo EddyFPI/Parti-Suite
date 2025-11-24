@@ -1,8 +1,6 @@
 # Parti Suite
 
-**Parti Suite** is an open-source toolkit for **Colloid Filtration Theory (CFT)**.  
-It provides forward and inverse modeling, force simulations, and multiscale upscaling of colloid–collector interactions, with applications in both research and teaching.
-
+**Parti Suite** is an open-source toolkit open-source toolkit for **colloid transport and interaction simulations at nano-, pore, and continuum scale** as described in detail in the free book by Johnson and Pazmino, 2023
 ---
 
 ## Modules
