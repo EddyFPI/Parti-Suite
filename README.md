@@ -1,6 +1,7 @@
 # Parti Suite
 
-**Parti Suite** is an open-source toolkit open-source toolkit for colloid transport and interaction simulations at nano-, pore, and continuum scale as described in detail in the free book by Johnson and Pazmino, 2023
+**Parti Suite** 
+is an open-source toolkit open-source toolkit for colloid transport and interaction simulations at nano-, pore, and continuum scale as described in detail in the free book by Johnson and Pazmino, 2023
 ---
 
 ## Modules
